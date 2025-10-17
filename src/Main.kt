@@ -1,11 +1,10 @@
 fun main() {
-    print("Введите ваш уровень: ")
-    val level = readln().toInt()
+    print("Введите число: ")
+    val num = readLine()!!.toInt()
 
-    if (level < 10) {
-        println("Новичок\nПрибавка к HP: +10")
-    } else if (level < 50) {
-        println("Опытный\nПрибавка к HP: +30")
-    } else { println("Легенда\nПрибавка к HP: +100")
+    if (num in 10..50) {
+        println("Число $num входит в диапазон от 10 до 50 включительно")
+    } else {
+        println("Число $num НЕ входит в диапазон от 10 до 50 включительно")
     }
 }
