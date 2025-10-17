@@ -1,12 +1,11 @@
 fun main() {
-    print("Введите ваш возраст: ")
-    val age = readln().toInt()
+    print("Введите ваш уровень: ")
+    val level = readln().toInt()
 
-    if (age < 12) {
-        println("Вы ребёнок")
-    } else if (age <= 17) {
-        println("Вы подросток")
-    } else {
-        println("Вы взрослый")
+    if (level < 10) {
+        println("Новичок\nПрибавка к HP: +10")
+    } else if (level < 50) {
+        println("Опытный\nПрибавка к HP: +30")
+    } else { println("Легенда\nПрибавка к HP: +100")
     }
 }
